@@ -1,0 +1,24 @@
+# ===== Secrets — never commit real configs =====
+# Only *.template / *.example files are tracked. The live configs hold
+# API keys and password hashes and stay local.
+qBittorrent.ini
+ServerConfig.json
+*.key
+*.secret
+.env
+
+# ===== Runtime / logs =====
+*.log
+service.log
+flaresolverr/flaresolverr/
+*.zip
+
+# ===== Downloaded binaries (fetched by install scripts) =====
+nssm*/
+nssm.exe
+python-*.exe
+
+# ===== OS cruft =====
+.DS_Store
+Thumbs.db
+desktop.ini
